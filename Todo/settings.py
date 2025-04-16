@@ -25,17 +25,12 @@ SECRET_KEY = 'django-insecure-yzm_j%p!-4&_so$bxzzp9*cdp^omq9*9-fve863^d#_=%1ed&t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
+
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
-    "backendmaria-d9eg.onrender.com"]
-=======
-ALLOWED_HOSTS = ["backendmaria-d9eg.onrender.com"]
->>>>>>> 133d20b5e619d853b1e1220cca41449c4eb4a9bf
-
-
-# Application definition
+    "backendmaria-d9eg.onrender.com"
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -47,9 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'mytodo',
     'corsheaders',
-<<<<<<< HEAD
     'rest_framework.authtoken',
-    
 ]
 
 REST_FRAMEWORK = {
@@ -59,13 +52,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
-}   
+}
 
-=======
-    
-]
-
->>>>>>> 133d20b5e619d853b1e1220cca41449c4eb4a9bf
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -77,19 +65,14 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-ROOT_URLCONF = 'mytodo.urls'
-
-<<<<<<< HEAD
-# CORS_ALLOWED_ORIGINS = [
-#  "https://desireeshortiee.github.io/FrontendMaria/", 
-#   "https://desireeshortiee.github.io/"
-# ]
-=======
 CORS_ALLOWED_ORIGINS = [
     "https://desireeshortiee.github.io/FrontendMaria/", 
     "https://desireeshortiee.github.io/"
 ]
->>>>>>> 133d20b5e619d853b1e1220cca41449c4eb4a9bf
+
+# Or you can enable this if you want to allow all
+# CORS_ALLOW_ALL_ORIGINS = True
+
 
 TEMPLATES = [
     {
