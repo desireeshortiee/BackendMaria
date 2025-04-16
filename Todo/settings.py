@@ -65,15 +65,15 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "https://desireeshortiee.github.io/FrontendMaria/", 
-    "https://desireeshortiee.github.io/"
-]
+#CORS_ALLOWED_ORIGINS = [
+   # "https://desireeshortiee.github.io/FrontendMaria/", 
+    #"https://desireeshortiee.github.io/"
+#]
 
 # Or you can enable this if you want to allow all
 # CORS_ALLOW_ALL_ORIGINS = True
 
-
+ROOT_URLCONF = 'Todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
